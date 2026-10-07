@@ -1,0 +1,391 @@
+/* WP Free Site Cloner - admin page. Minimal styling on top of core admin
+ * classes (card, notice, button, widefat). No external fonts or requests. */
+
+.fsc-card {
+	max-width: 900px;
+}
+
+.fsc-progress-row {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+	margin: 0.75em 0 0.25em;
+}
+
+.fsc-progress {
+	flex: 1 1 auto;
+	width: 100%;
+	height: 1.25em;
+}
+
+.fsc-percent {
+	min-width: 3.5em;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
+
+.fsc-phase-label {
+	font-weight: 600;
+	margin: 0.25em 0;
+}
+
+.fsc-status-line {
+	color: #646970;
+	margin: 0.25em 0 0.75em;
+	min-height: 1.2em;
+}
+
+.fsc-log-details {
+	margin-top: 0.5em;
+}
+
+.fsc-log-details > summary {
+	cursor: pointer;
+}
+
+.fsc-log {
+	max-height: 220px;
+	overflow: auto;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	margin-top: 0.5em;
+	padding: 0.5em 0.75em;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 12px;
+}
+
+.fsc-log-line {
+	white-space: pre-wrap;
+	word-break: break-word;
+	padding: 1px 0;
+}
+
+.fsc-log-time {
+	color: #8c8f94;
+	margin-right: 0.5em;
+}
+
+.fsc-dropzone {
+	border: 2px dashed #8c8f94;
+	border-radius: 4px;
+	padding: 2em 1em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.fsc-dropzone.is-dragover {
+	border-color: #2271b1;
+	background: #f0f6fc;
+}
+
+.fsc-dropzone:focus {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+/* Headings are given tabindex="-1" so we can move keyboard/AT focus to them
+ * programmatically (e.g. after the inspect screen renders); that is not a
+ * real interactive control, so it should not show a focus ring. Real
+ * controls (buttons, links, the dropzone, log panes) keep theirs. */
+[tabindex="-1"]:focus {
+	outline: none;
+}
+
+.fsc-storage-hint code {
+	word-break: break-all;
+}
+
+.fsc-inspect-table th {
+	width: 200px;
+}
+
+.fsc-confirm-notice {
+	margin-top: 1em;
+}
+
+.fsc-confirm-check {
+	display: block;
+	margin: 1em 0;
+}
+
+.fsc-archives-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35em;
+}
+
+.fsc-archives-actions form,
+.fsc-archives-actions .button {
+	margin: 0;
+}
+
+.fsc-col-size {
+	white-space: nowrap;
+}
+
+#fsc-archives-freespace {
+	margin-top: 0.75em;
+}
+
+.fsc-progress-small {
+	height: 0.85em;
+}
+
+.fsc-step-progress-row {
+	margin-top: 0.25em;
+}
+
+.fsc-step-detail {
+	margin: 0.5em 0 0.25em;
+	font-style: italic;
+	color: #3c434a;
+}
+
+.fsc-step-counter {
+	margin: 0 0 0.5em;
+	color: #646970;
+	font-variant-numeric: tabular-nums;
+}
+
+.fsc-elapsed-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin: 0.25em 0;
+	color: #646970;
+	font-variant-numeric: tabular-nums;
+}
+
+.fsc-heartbeat {
+	margin: 0.25em 0 0.75em;
+	color: #8c8f94;
+	font-size: 0.9em;
+}
+
+/* Inline spinner (CSS only, no icon font/image). */
+.fsc-spinner {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	border: 2px solid #c3c4c7;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: fsc-spin 0.8s linear infinite;
+}
+
+@keyframes fsc-spin {
+	to {
+		transform: rotate( 360deg );
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* Step list                                                           */
+/* ------------------------------------------------------------------ */
+
+.fsc-steps-wrap {
+	margin: 0.75em 0 1em;
+}
+
+.fsc-steps {
+	list-style: none;
+	margin: 0 0 0.5em;
+	padding: 0;
+}
+
+.fsc-step {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.2em 0;
+}
+
+.fsc-step-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.3em;
+	height: 1.3em;
+	flex: 0 0 auto;
+	border-radius: 50%;
+	font-size: 0.9em;
+	line-height: 1;
+}
+
+.fsc-step-pending .fsc-step-icon {
+	color: #a7aaad;
+	border: 1px solid #c3c4c7;
+}
+
+.fsc-step-pending .fsc-step-icon::before {
+	content: '';
+}
+
+.fsc-step-active .fsc-step-icon {
+	border: 2px solid #c3c4c7;
+	border-top-color: #2271b1;
+	animation: fsc-spin 0.8s linear infinite;
+}
+
+.fsc-step-active .fsc-step-label {
+	font-weight: 600;
+}
+
+.fsc-step-done .fsc-step-icon {
+	color: #fff;
+	background: #00a32a;
+}
+
+.fsc-step-done .fsc-step-icon::before {
+	content: '\2713';
+}
+
+.fsc-step-skipped .fsc-step-icon {
+	color: #a7aaad;
+	border: 1px solid #c3c4c7;
+}
+
+.fsc-step-skipped .fsc-step-icon::before {
+	content: '\2013';
+}
+
+.fsc-step-skipped .fsc-step-label {
+	color: #787c82;
+}
+
+.fsc-step-failed .fsc-step-icon {
+	color: #fff;
+	background: #d63638;
+}
+
+.fsc-step-failed .fsc-step-icon::before {
+	content: '\2715';
+}
+
+.fsc-step-failed .fsc-step-label {
+	color: #d63638;
+	font-weight: 600;
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.fsc-spinner,
+	.fsc-step-active .fsc-step-icon {
+		animation: none;
+		border-top-color: #c3c4c7;
+	}
+
+	.fsc-step-active .fsc-step-icon::before {
+		content: '\25CF';
+		color: #2271b1;
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* Message boxes: timestamp + re-render flash on repeat messages       */
+/* ------------------------------------------------------------------ */
+
+.fsc-msg-time {
+	color: #646970;
+	font-size: 0.9em;
+	margin: 0 0 0.5em;
+}
+
+.fsc-msg-box.fsc-flash {
+	animation: fsc-flash-box 0.9s ease;
+}
+
+@keyframes fsc-flash-box {
+	0% {
+		box-shadow: 0 0 0 3px rgba( 214, 54, 56, 0.35 );
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba( 214, 54, 56, 0 );
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.fsc-msg-box.fsc-flash {
+		animation: none;
+	}
+}
+
+.fsc-col-size-exact {
+	display: block;
+	color: #646970;
+	font-size: 0.9em;
+}
+
+#fsc-archives-ftp-hint {
+	margin-top: 0.5em;
+}
+
+.fsc-archives-risk {
+	border-left: 4px solid #dba617;
+	padding: 0.25em 0 0.25em 0.75em;
+}
+
+.fsc-storage-info {
+	margin-top: 1.5em;
+}
+
+.fsc-storage-table code {
+	word-break: break-all;
+}
+
+.fsc-storage-notes {
+	list-style: disc;
+	margin-left: 1.5em;
+}
+
+.fsc-retention-notice {
+	max-width: 900px;
+}
+
+/* Narrow widths (down to ~320px). */
+@media (max-width: 480px) {
+	.fsc-progress-row {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.25em;
+	}
+
+	.fsc-percent {
+		text-align: left;
+	}
+
+	.fsc-elapsed-row {
+		flex-direction: column;
+		gap: 0.1em;
+	}
+
+	.fsc-inspect-table th {
+		width: auto;
+	}
+
+	#fsc-archives-table {
+		display: block;
+		overflow-x: auto;
+	}
+
+	.fsc-card .button {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+
+	.fsc-card p > .button + .button {
+		margin-left: 0;
+	}
+
+	/* Archive row actions stay compact (small buttons, wrapping with a gap)
+	 * instead of the full-width stacked buttons used elsewhere in the card -
+	 * full width here forced each row's buttons onto their own line inside
+	 * the horizontally-scrolling table. */
+	.fsc-archives-actions .button {
+		width: auto;
+		margin-bottom: 0;
+	}
+}

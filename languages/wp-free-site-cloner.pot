@@ -1,0 +1,1052 @@
+# Copyright (C) 2026 WP Free Site Cloner contributors
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Free Site Cloner 0.9.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/repo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-06T19:53:46+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-free-site-cloner\n"
+
+#. Plugin Name of the plugin
+#: wp-free-site-cloner.php
+#: admin/view-page.php:18
+#: admin/view-page.php:415
+#: includes/class-fsc-plugin.php:503
+#: includes/class-fsc-plugin.php:606
+msgid "WP Free Site Cloner"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-free-site-cloner.php
+msgid "https://github.com/toby-sutor/wp-free-site-cloner"
+msgstr ""
+
+#. Description of the plugin
+#: wp-free-site-cloner.php
+msgid "Export wp-content and the database into one .tar archive and restore it on another WordPress site, with URLs and paths rewritten. Also imports All-in-One WP Migration (.wpress) and Duplicator (.zip) archives. Free, no upsells."
+msgstr ""
+
+#. Author of the plugin
+#: wp-free-site-cloner.php
+msgid "WP Free Site Cloner contributors"
+msgstr ""
+
+#: admin/view-page.php:26
+msgid "Multisite networks are not supported. Export and import are disabled on this site."
+msgstr ""
+
+#: admin/view-page.php:36
+msgid "Delete all archives"
+msgstr ""
+
+#: admin/view-page.php:43
+msgid "Export"
+msgstr ""
+
+#: admin/view-page.php:44
+msgid "Save the database and wp-content into one archive that you can import on another WordPress site running this plugin."
+msgstr ""
+
+#: admin/view-page.php:49
+msgid "Start export"
+msgstr ""
+
+#: admin/view-page.php:58
+#: admin/view-page.php:162
+#: admin/view-page.php:253
+msgid "Cancel"
+msgstr ""
+
+#: admin/view-page.php:62
+#: admin/view-page.php:257
+msgid "Log"
+msgstr ""
+
+#: admin/view-page.php:72
+#: admin/view-page.php:267
+msgid "Resume"
+msgstr ""
+
+#: admin/view-page.php:75
+#: admin/view-page.php:88
+#: admin/view-page.php:173
+#: admin/view-page.php:270
+msgid "Dismiss"
+msgstr ""
+
+#: admin/view-page.php:83
+#: admin/view-page.php:219
+#: admin/view-page.php:278
+#: includes/class-fsc-plugin.php:651
+msgid "Warnings:"
+msgstr ""
+
+#: admin/view-page.php:96
+msgid "Import"
+msgstr ""
+
+#: admin/view-page.php:97
+msgid "Restore an archive on this site. This replaces the current database and wp-content."
+msgstr ""
+
+#: admin/view-page.php:103
+msgid "Cancel running import"
+msgstr ""
+
+#: admin/view-page.php:110
+msgid "Drop an archive file here, or activate to choose a file"
+msgstr ""
+
+#: admin/view-page.php:112
+msgid "Drag and drop a backup archive (.tar, .wpress from All-in-One WP Migration, .zip or .daf from Duplicator) here, or"
+msgstr ""
+
+#: admin/view-page.php:113
+msgid "Choose file"
+msgstr ""
+
+#: admin/view-page.php:118
+msgid "Large archives can also be uploaded by FTP to this folder; they then appear in the Archives list below:"
+msgstr ""
+
+#: admin/view-page.php:135
+#: admin/view-page.php:183
+#: admin/view-page.php:405
+msgid "Choose another file"
+msgstr ""
+
+#: admin/view-page.php:145
+msgid "Upload progress"
+msgstr ""
+
+#: admin/view-page.php:151
+msgid "Cancel upload"
+msgstr ""
+
+#: admin/view-page.php:186
+#: admin/view-page.php:420
+msgid "Delete this upload"
+msgstr ""
+
+#: admin/view-page.php:192
+msgid "Archive details"
+msgstr ""
+
+#: admin/view-page.php:196
+msgid "Archive"
+msgstr ""
+
+#: admin/view-page.php:200
+msgid "Source URL"
+msgstr ""
+
+#: admin/view-page.php:204
+msgid "Source format"
+msgstr ""
+
+#: admin/view-page.php:208
+msgid "WordPress version"
+msgstr ""
+
+#: admin/view-page.php:212
+#: admin/view-page.php:306
+msgid "Size"
+msgstr ""
+
+#: admin/view-page.php:226
+msgid "This replaces the whole current site's database and wp-content. You will be logged out and must log in with the old site's credentials."
+msgstr ""
+
+#: admin/view-page.php:230
+msgid "Only import archives you created or fully trust: an archive contains PHP code (plugins, themes, mu-plugins) and user accounts that become active on this site."
+msgstr ""
+
+#: admin/view-page.php:236
+msgid "I understand this replaces the current site and cannot be undone."
+msgstr ""
+
+#: admin/view-page.php:241
+msgid "Start import"
+msgstr ""
+
+#: admin/view-page.php:244
+msgid "Back"
+msgstr ""
+
+#: admin/view-page.php:276
+msgid "Import complete. Log in with the user accounts of the imported site."
+msgstr ""
+
+#: admin/view-page.php:283
+msgid "Go to login"
+msgstr ""
+
+#: admin/view-page.php:291
+msgid "Archives"
+msgstr ""
+
+#: admin/view-page.php:298
+msgid "Archives are not encrypted."
+msgstr ""
+
+#: admin/view-page.php:299
+msgid "Each one is a full copy of the site: the database with password hashes, email addresses and API keys, plus all files. Keep downloaded copies somewhere safe and delete archives here once a migration is done."
+msgstr ""
+
+#: admin/view-page.php:305
+msgid "Name"
+msgstr ""
+
+#: admin/view-page.php:307
+msgid "Date"
+msgstr ""
+
+#: admin/view-page.php:308
+msgid "Format"
+msgstr ""
+
+#: admin/view-page.php:309
+msgid "Actions"
+msgstr ""
+
+#: admin/view-page.php:315
+msgid "No archives yet. Export this site, or upload an archive by FTP."
+msgstr ""
+
+#: admin/view-page.php:321
+msgid "Storage"
+msgstr ""
+
+#: admin/view-page.php:328
+msgid "Location"
+msgstr ""
+
+#: admin/view-page.php:332
+msgid "Permissions"
+msgstr ""
+
+#: admin/view-page.php:336
+msgid "Automatic deletion"
+msgstr ""
+
+#: admin/view-page.php:353
+#, php-format
+msgid "Error: %s"
+msgstr ""
+
+#: admin/view-page.php:354
+#: includes/class-fsc-plugin.php:906
+msgid "Your session expired. Reload the page."
+msgstr ""
+
+#. translators: 1: attempt number, 2: max attempts, 3: seconds until the next retry.
+#: admin/view-page.php:356
+#, php-format
+msgid "The server did not respond (attempt %s of %s). Retrying in %ss…"
+msgstr ""
+
+#: admin/view-page.php:357
+msgid "Lost connection to the server after several attempts. The job may still be running on the server."
+msgstr ""
+
+#: admin/view-page.php:358
+msgid "Waiting for the current step to finish…"
+msgstr ""
+
+#. translators: 1: bytes uploaded so far, 2: total size, 3: upload speed.
+#: admin/view-page.php:360
+#, php-format
+msgid "%s of %s uploaded (%s/s)"
+msgstr ""
+
+#. translators: 1: chunk number sent so far, 2: total chunk count.
+#: admin/view-page.php:362
+#, php-format
+msgid "Chunk %s of %s"
+msgstr ""
+
+#. translators: %s: estimated time remaining, formatted mm:ss.
+#: admin/view-page.php:364
+#, php-format
+msgid "about %s remaining"
+msgstr ""
+
+#: admin/view-page.php:365
+msgid "Preparing upload…"
+msgstr ""
+
+#: admin/view-page.php:366
+msgid "Upload cancelled."
+msgstr ""
+
+#. translators: 1: current attempt number, 2: max attempts.
+#: admin/view-page.php:368
+#, php-format
+msgid "Upload problem, retrying… (attempt %s of %s)"
+msgstr ""
+
+#: admin/view-page.php:369
+msgid "That file type is not supported. Use a .tar, .wpress, .zip or .daf archive."
+msgstr ""
+
+#: admin/view-page.php:370
+msgid "Checking file…"
+msgstr ""
+
+#: admin/view-page.php:371
+msgid "Checking archive…"
+msgstr ""
+
+#: admin/view-page.php:374
+#, php-format
+msgid "This file is incomplete: %s of %s bytes (%s%). The download was probably cut off. Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: admin/view-page.php:375
+msgid "This archive was never finished on the source site. Export again."
+msgstr ""
+
+#. translators: 1: current file size formatted with thousands separators, 2: expected size.
+#: admin/view-page.php:377
+#, php-format
+msgid "This file is larger than expected: %s of %s bytes. It may not be the right archive, or extra data was added to it. Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: admin/view-page.php:378
+msgid "This file is incomplete. The download was probably cut off. Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: admin/view-page.php:379
+msgid "Upload complete. Checking the archive…"
+msgstr ""
+
+#. translators: %s: elapsed seconds.
+#: admin/view-page.php:381
+#, php-format
+msgid "(%ss elapsed)"
+msgstr ""
+
+#. translators: %s: timeout in seconds.
+#: admin/view-page.php:383
+#, php-format
+msgid "The server did not respond to the archive check within %ss. It may still be processing a large file; try again in a moment."
+msgstr ""
+
+#. translators: %s: seconds since the last server response.
+#: admin/view-page.php:385
+#, php-format
+msgid "Last response from server: %ss ago"
+msgstr ""
+
+#. translators: %s: seconds with no progress.
+#: admin/view-page.php:387
+#, php-format
+msgid "No progress for %ss. The server is still responding; a large file or table may be in progress."
+msgstr ""
+
+#. translators: %s: elapsed time, formatted mm:ss.
+#: admin/view-page.php:389
+#, php-format
+msgid "Total elapsed: %s"
+msgstr ""
+
+#. translators: %s: elapsed time in the current step, formatted mm:ss.
+#: admin/view-page.php:391
+#, php-format
+msgid "This step: %s"
+msgstr ""
+
+#: admin/view-page.php:392
+msgid "pending"
+msgstr ""
+
+#: admin/view-page.php:393
+msgid "in progress"
+msgstr ""
+
+#: admin/view-page.php:394
+msgid "done"
+msgstr ""
+
+#: admin/view-page.php:395
+msgid "skipped"
+msgstr ""
+
+#: admin/view-page.php:396
+msgid "failed"
+msgstr ""
+
+#. translators: 1: number done so far, 2: total.
+#: admin/view-page.php:398
+#, php-format
+msgid "%s of %s"
+msgstr ""
+
+#. translators: 1: number done so far, 2: total, 3: unit name (rows, files, tables, statements).
+#: admin/view-page.php:400
+#, php-format
+msgid "%s of %s %s"
+msgstr ""
+
+#: admin/view-page.php:401
+msgid "rows"
+msgstr ""
+
+#: admin/view-page.php:402
+msgid "files"
+msgstr ""
+
+#: admin/view-page.php:403
+msgid "tables"
+msgstr ""
+
+#: admin/view-page.php:404
+msgid "statements"
+msgstr ""
+
+#: admin/view-page.php:406
+#, php-format
+msgid "Delete %s? This cannot be undone."
+msgstr ""
+
+#: admin/view-page.php:407
+msgid "Cancel the running job? Progress made so far will be discarded."
+msgstr ""
+
+#: admin/view-page.php:408
+msgid "It can be cancelled once it has been idle for 10 minutes."
+msgstr ""
+
+#: admin/view-page.php:409
+msgid "Another export or import is already running. Replace it?"
+msgstr ""
+
+#: admin/view-page.php:410
+#, php-format
+msgid "Export complete: %s (%s)."
+msgstr ""
+
+#: admin/view-page.php:411
+msgid "A job is still running. If you leave, it keeps running on the server but this page will stop showing progress."
+msgstr ""
+
+#: admin/view-page.php:412
+msgid "An import is running, started from another browser tab or session. Progress cannot be shown here."
+msgstr ""
+
+#: admin/view-page.php:413
+msgid "An import is finishing on the server. Log in again shortly."
+msgstr ""
+
+#: admin/view-page.php:414
+msgid "That job or archive no longer exists. The lists were refreshed."
+msgstr ""
+
+#: admin/view-page.php:416
+msgid "All-in-One WP Migration"
+msgstr ""
+
+#: admin/view-page.php:417
+msgid "Duplicator"
+msgstr ""
+
+#: admin/view-page.php:418
+msgid "Download"
+msgstr ""
+
+#: admin/view-page.php:419
+msgid "Delete"
+msgstr ""
+
+#: admin/view-page.php:421
+msgid "Use for import"
+msgstr ""
+
+#. translators: %s: free disk space, e.g. 1.6 TB.
+#: admin/view-page.php:423
+#, php-format
+msgid "Free space: %s"
+msgstr ""
+
+#. translators: %s: exact byte count with thousands separators.
+#: admin/view-page.php:425
+#, php-format
+msgid "%s bytes"
+msgstr ""
+
+#: admin/view-page.php:426
+msgid "checksums available (verified on import)"
+msgstr ""
+
+#: admin/view-page.php:427
+msgid "(set by FSC_STORAGE_DIR)"
+msgstr ""
+
+#: admin/view-page.php:428
+msgid "(default, inside wp-content)"
+msgstr ""
+
+#. translators: 1: directory mode, 2: file mode (octal, e.g. 0700).
+#: admin/view-page.php:430
+#, php-format
+msgid "folders %s, files %s"
+msgstr ""
+
+#: admin/view-page.php:431
+msgid "(from FS_CHMOD_DIR/FS_CHMOD_FILE)"
+msgstr ""
+
+#. translators: %s: number of days.
+#: admin/view-page.php:433
+#, php-format
+msgid "Archives older than %s days are deleted once a day."
+msgstr ""
+
+#: admin/view-page.php:434
+msgid "Off: archives are kept until you delete them. To delete them automatically after a number of days, define FSC_ARCHIVE_RETENTION_DAYS in wp-config.php or use the fsc_archive_retention_days filter."
+msgstr ""
+
+#: admin/view-page.php:435
+msgid "Unfinished uploads and temporary files older than 24 hours are always deleted."
+msgstr ""
+
+#. translators: 1: number of archives, 2: number of days, 3: total size.
+#: admin/view-page.php:437
+#, php-format
+msgid "%s archive(s) in storage are older than %s days (%s in total). Archives are full, unencrypted copies of a site; delete them once you no longer need them."
+msgstr ""
+
+#: admin/view-page.php:438
+msgid "Delete ALL archives in storage? This cannot be undone. An archive used by a running job is kept."
+msgstr ""
+
+#. translators: %s: number of archives deleted.
+#: admin/view-page.php:440
+#, php-format
+msgid "%s archive(s) deleted."
+msgstr ""
+
+#. translators: %s: the storage directory's absolute path.
+#: admin/view-page.php:442
+#, php-format
+msgid "Large archives: download by FTP/SFTP from %s to avoid browser or server timeouts. Compare the file size with the size shown here."
+msgstr ""
+
+#. translators: %s: database connection charset name.
+#: includes/class-fsc-db-export.php:152
+#, php-format
+msgid "This site uses the database charset \"%s\", which cannot be cloned safely (the server reads statement text under it differently from the import guard). Supported charsets include utf8mb4, utf8, latin1 and the other single-byte charsets; big5, gbk, sjis, cp932 and gb18030 are not supported."
+msgstr ""
+
+#. translators: %s: connection charset name from the dump.
+#: includes/class-fsc-db-import.php:195
+#, php-format
+msgid "The database dump selects the connection charset \"%s\", which this plugin refuses because the database server does not read statement text under it the same way the import guard does (a crafted dump could slip past the guard). Dumps using big5, gbk, sjis, cp932 or gb18030 cannot be imported safely. Nothing was changed on this site."
+msgstr ""
+
+#: includes/class-fsc-exporter.php:32
+msgid "Exporting database"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:33
+msgid "Scanning files"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:34
+msgid "Adding database to archive"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:35
+msgid "Adding files to archive"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:36
+msgid "Computing checksums"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:37
+msgid "Finishing archive"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:38
+msgid "Export complete"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:49
+msgid "Export database"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:50
+msgid "Add files"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:51
+msgid "Compute checksums"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:52
+msgid "Finish archive"
+msgstr ""
+
+#. translators: 1: table, 2: rows done, 3: estimated rows
+#: includes/class-fsc-exporter.php:99
+#, php-format
+msgid "Exporting table %1$s: %2$s of %3$s rows"
+msgstr ""
+
+#. translators: 1: table, 2: rows done
+#: includes/class-fsc-exporter.php:102
+#, php-format
+msgid "Exporting table %1$s: %2$s rows"
+msgstr ""
+
+#. translators: 1: files found, 2: size
+#: includes/class-fsc-exporter.php:116
+#, php-format
+msgid "Scanning files: %1$s found (%2$s)"
+msgstr ""
+
+#. translators: 1: bytes done, 2: total
+#: includes/class-fsc-exporter.php:130
+#, php-format
+msgid "Adding the database dump to the archive: %1$s of %2$s"
+msgstr ""
+
+#. translators: 1: files done, 2: files total, 3: bytes done, 4: bytes total
+#: includes/class-fsc-exporter.php:140
+#, php-format
+msgid "Adding files: %1$s of %2$s (%3$s of %4$s)"
+msgstr ""
+
+#. translators: 1: bytes done, 2: total
+#: includes/class-fsc-exporter.php:152
+#, php-format
+msgid "Computing checksums: %1$s of %2$s"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:155
+msgid "Writing the checksum list and closing the archive"
+msgstr ""
+
+#. translators: 1: archive name, 2: size
+#: includes/class-fsc-exporter.php:161
+#, php-format
+msgid "Archive ready: %1$s (%2$s)"
+msgstr ""
+
+#. translators: zero bytes
+#: includes/class-fsc-exporter.php:180
+msgid "0 B"
+msgstr ""
+
+#: includes/class-fsc-exporter.php:220
+#: includes/class-fsc-importer.php:386
+msgid "Multisite networks are not supported."
+msgstr ""
+
+#. translators: 1: bytes needed, 2: bytes free
+#: includes/class-fsc-exporter.php:245
+#, php-format
+msgid "Not enough disk space: about %1$s needed for the database alone, %2$s free."
+msgstr ""
+
+#. translators: 1: bytes needed, 2: bytes free
+#: includes/class-fsc-exporter.php:293
+#, php-format
+msgid "Not enough disk space for the archive: %1$s needed, %2$s free."
+msgstr ""
+
+#: includes/class-fsc-exporter.php:391
+msgid "Cannot rename the finished archive."
+msgstr ""
+
+#: includes/class-fsc-importer.php:65
+msgid "Verifying archive"
+msgstr ""
+
+#: includes/class-fsc-importer.php:66
+msgid "Reading database from archive"
+msgstr ""
+
+#: includes/class-fsc-importer.php:67
+msgid "Preparing database import"
+msgstr ""
+
+#: includes/class-fsc-importer.php:68
+msgid "Importing database"
+msgstr ""
+
+#: includes/class-fsc-importer.php:69
+msgid "Updating URLs and paths"
+msgstr ""
+
+#: includes/class-fsc-importer.php:70
+msgid "Extracting files to a staging folder"
+msgstr ""
+
+#: includes/class-fsc-importer.php:71
+msgid "Switching to the new site"
+msgstr ""
+
+#: includes/class-fsc-importer.php:72
+msgid "Cleaning up"
+msgstr ""
+
+#: includes/class-fsc-importer.php:73
+#: includes/class-fsc-importer.php:287
+msgid "Import complete"
+msgstr ""
+
+#: includes/class-fsc-importer.php:84
+msgid "Verify archive"
+msgstr ""
+
+#: includes/class-fsc-importer.php:85
+msgid "Load database into temporary tables"
+msgstr ""
+
+#: includes/class-fsc-importer.php:86
+msgid "Replace URLs and paths"
+msgstr ""
+
+#: includes/class-fsc-importer.php:87
+msgid "Extract files to staging"
+msgstr ""
+
+#: includes/class-fsc-importer.php:88
+msgid "Switch to the new site"
+msgstr ""
+
+#: includes/class-fsc-importer.php:89
+msgid "Clean up"
+msgstr ""
+
+#. translators: 1: bytes checked, 2: total
+#: includes/class-fsc-importer.php:175
+#, php-format
+msgid "Verifying archive: %1$s of %2$s"
+msgstr ""
+
+#: includes/class-fsc-importer.php:177
+msgid "Looking for the checksum list"
+msgstr ""
+
+#. translators: 1: bytes done, 2: total
+#: includes/class-fsc-importer.php:189
+#, php-format
+msgid "Reading the database dump from the archive: %1$s of %2$s"
+msgstr ""
+
+#. translators: %s: bytes done
+#: includes/class-fsc-importer.php:191
+#, php-format
+msgid "Reading the database dump from the archive: %s"
+msgstr ""
+
+#: includes/class-fsc-importer.php:194
+msgid "Preparing the temporary tables"
+msgstr ""
+
+#. translators: 1: bytes done, 2: total
+#: includes/class-fsc-importer.php:206
+#, php-format
+msgid "%1$s of %2$s"
+msgstr ""
+
+#. translators: 1: table, 2: table number, 3: table count, 4: "x MB of y MB"
+#: includes/class-fsc-importer.php:214
+#, php-format
+msgid "Importing table %1$s (%2$s of %3$s tables): %4$s"
+msgstr ""
+
+#. translators: 1: table, 2: "x MB of y MB"
+#: includes/class-fsc-importer.php:217
+#, php-format
+msgid "Importing table %1$s: %2$s"
+msgstr ""
+
+#. translators: %s: "x MB of y MB"
+#: includes/class-fsc-importer.php:221
+#, php-format
+msgid "Importing the database: %s"
+msgstr ""
+
+#. translators: 1: table, 2: table number, 3: table count, 4: rows checked
+#: includes/class-fsc-importer.php:238
+#, php-format
+msgid "Replacing URLs in %1$s (table %2$s of %3$s): %4$s rows checked"
+msgstr ""
+
+#: includes/class-fsc-importer.php:240
+msgid "Replacing URLs: final checks"
+msgstr ""
+
+#. translators: 1: files done, 2: files total, 3: bytes done, 4: bytes total
+#: includes/class-fsc-importer.php:256
+#, php-format
+msgid "Extracting files: %1$s of %2$s (%3$s of %4$s)"
+msgstr ""
+
+#. translators: 1: files done, 2: bytes done
+#: includes/class-fsc-importer.php:259
+#, php-format
+msgid "Extracting files: %1$s (%2$s)"
+msgstr ""
+
+#: includes/class-fsc-importer.php:266
+msgid "The switch failed: moving the previous files back"
+msgstr ""
+
+#. translators: 1: folders moved, 2: total
+#: includes/class-fsc-importer.php:269
+#, php-format
+msgid "Moving files into place: %1$s of %2$s folders, then switching the database"
+msgstr ""
+
+#: includes/class-fsc-importer.php:271
+msgid "Switching to the imported database and files"
+msgstr ""
+
+#: includes/class-fsc-importer.php:277
+msgid "Deleting the replaced files"
+msgstr ""
+
+#: includes/class-fsc-importer.php:279
+msgid "Restoring database constraint names"
+msgstr ""
+
+#: includes/class-fsc-importer.php:281
+msgid "Flushing caches and rewrite rules"
+msgstr ""
+
+#: includes/class-fsc-importer.php:356
+msgid "Unsupported archive. Supported: WP Free Site Cloner .tar, All-in-One WP Migration .wpress, Duplicator .daf and .zip."
+msgstr ""
+
+#: includes/class-fsc-importer.php:390
+msgid "Archive not found in the storage directory."
+msgstr ""
+
+#: includes/class-fsc-importer.php:396
+msgid "This archive is from a multisite network, which is not supported."
+msgstr ""
+
+#: includes/class-fsc-importer.php:399
+msgid "The archive does not say which site it came from (no URL in its metadata)."
+msgstr ""
+
+#. translators: 1: source WordPress version, 2: this site's WordPress version
+#: includes/class-fsc-importer.php:410
+#, php-format
+msgid "Update WordPress before importing: the archive comes from WordPress %1$s, whose password hashes WordPress %2$s cannot check. Nobody could log in after the import."
+msgstr ""
+
+#. translators: 1: source WordPress version, 2: this site's WordPress version
+#: includes/class-fsc-importer.php:417
+#, php-format
+msgid "The archive comes from WordPress %1$s, this site runs %2$s. Update WordPress first, or themes and plugins from the archive may not work."
+msgstr ""
+
+#: includes/class-fsc-importer.php:585
+#: includes/class-fsc-importer.php:744
+msgid "The archive disappeared from the storage directory."
+msgstr ""
+
+#: includes/class-fsc-importer.php:632
+msgid "The database dump in the archive is corrupt (checksum mismatch)."
+msgstr ""
+
+#. translators: %s: archive format
+#: includes/class-fsc-importer.php:762
+#, php-format
+msgid "Skipped: %s archives have no whole-archive checksum. Their per-file CRC32 checksums are checked while the database and files are extracted."
+msgstr ""
+
+#: includes/class-fsc-importer.php:770
+msgid "The archive is damaged: its checksum list is missing or unreadable. Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: includes/class-fsc-importer.php:780
+msgid "This archive was made by an older version and has no checksum; it cannot be verified."
+msgstr ""
+
+#. translators: 1: bytes needed, 2: bytes free
+#: includes/class-fsc-importer.php:1189
+#, php-format
+msgid "Not enough free disk space for the import: about %1$s are needed to unpack the archive next to the site, %2$s are free. Free up space (for example delete old archives) and start the import again. Nothing on the site was changed."
+msgstr ""
+
+#: includes/class-fsc-integrity.php:393
+msgid "The archive manifest is damaged (invalid archive_size). Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: includes/class-fsc-integrity.php:397
+msgid "The archive was never finished: the export that wrote it did not complete. Export the site again."
+msgstr ""
+
+#. translators: 1: bytes received, 2: bytes expected, 3: percentage
+#: includes/class-fsc-integrity.php:403
+#, php-format
+msgid "The archive is incomplete: %1$s of %2$s bytes (%3$s%%). Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#. translators: 1: actual bytes, 2: bytes expected
+#: includes/class-fsc-integrity.php:414
+#, php-format
+msgid "The archive has the wrong size: %1$s bytes instead of %2$s. Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#. translators: %s: bytes received
+#: includes/class-fsc-integrity.php:434
+#, php-format
+msgid "The archive is incomplete: it does not end like a finished WP Free Site Cloner archive (%s bytes received). Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#. translators: 1: position in MB, 2: segment number
+#: includes/class-fsc-integrity.php:464
+#, php-format
+msgid "The archive is damaged around %1$s MB (checksum mismatch in segment %2$d). Download it again, or copy it by FTP/SFTP."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:416
+msgid "The storage directory set by FSC_STORAGE_DIR is inside the web root. Choose a directory outside it, or archives may be downloadable on servers that ignore .htaccess."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:418
+msgid "Archives are stored inside the web root, protected by a random folder name and deny rules. To keep them outside the web root, define FSC_STORAGE_DIR in wp-config.php."
+msgstr ""
+
+#. translators: 1: directory mode, 2: file mode (octal).
+#: includes/class-fsc-plugin.php:422
+#, php-format
+msgid "Storage permissions follow FS_CHMOD_DIR/FS_CHMOD_FILE (%1$s/%2$s), so other accounts on this server may be able to read the archives."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:425
+msgid "The storage permissions could not be restricted on this server. Delete archives as soon as you no longer need them."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:430
+msgid "PHP runs as a different system user than the owner of wp-content, so an FTP/SFTP account may not be able to read the archives (they are readable by PHP only). Download them here, or define FS_CHMOD_DIR and FS_CHMOD_FILE in wp-config.php."
+msgstr ""
+
+#. translators: 1: number of archives, 2: directory.
+#: includes/class-fsc-plugin.php:438
+#, php-format
+msgid "%1$d archive is still in the old storage location %2$s. Move it to FSC_STORAGE_DIR or delete it."
+msgid_plural "%1$d archives are still in the old storage location %2$s. Move them to FSC_STORAGE_DIR or delete them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-fsc-plugin.php:494
+msgid "Open"
+msgstr ""
+
+#: includes/class-fsc-plugin.php:504
+msgid "Site Cloner"
+msgstr ""
+
+#: includes/class-fsc-plugin.php:599
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:622
+msgid "Overall progress"
+msgstr ""
+
+#: includes/class-fsc-plugin.php:630
+msgid "Steps"
+msgstr ""
+
+#: includes/class-fsc-plugin.php:635
+msgid "Current step progress"
+msgstr ""
+
+#: includes/class-fsc-plugin.php:694
+msgid "Another export or import is running. Cancel it first or wait for it to finish."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:697
+msgid "Another step is running right now. Try again in a few seconds."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:703
+msgid "An import is finishing and cannot be replaced."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:748
+msgid "The previous import cannot be replaced right now: the database did not confirm whether its table switch completed. Nothing was changed. Try again in a few seconds."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:736
+msgid "Another step is still running. Retry shortly."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:741
+msgid "The job no longer exists."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:873
+msgid "The imported database is already active; the import can only be finished, not cancelled."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:876
+msgid "A step is still running. Try again in a few seconds."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:945
+msgid "The import cannot be cancelled right now: the database did not confirm whether its table switch completed. Nothing was changed. Try again in a few seconds."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:897
+#: includes/class-fsc-plugin.php:1162
+msgid "You are not allowed to do this."
+msgstr ""
+
+#. translators: %s: short error reference.
+#: includes/class-fsc-plugin.php:945
+#, php-format
+msgid "An unexpected error occurred (reference %s). The details were written to the PHP error log."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1036
+msgid "No export is running."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1122
+msgid "This archive is in use by a running job."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1125
+#: includes/class-fsc-plugin.php:1184
+msgid "Archive not found."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1141
+msgid "Please confirm that all archives should be deleted."
+msgstr ""
+
+#. translators: %d: PHP upload error code.
+#: includes/class-fsc-plugin.php:1275
+#, php-format
+msgid "The chunk upload failed (PHP upload error %d). Try a smaller chunk size."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1320
+msgid "Please confirm that the current site will be replaced."
+msgstr ""
+
+#: includes/class-fsc-plugin.php:1347
+msgid "Invalid or expired import token."
+msgstr ""
+
+#: includes/sources/class-fsc-source-native.php:125
+msgid "This .tar file is not a WP Free Site Cloner archive, or its beginning is damaged."
+msgstr ""
