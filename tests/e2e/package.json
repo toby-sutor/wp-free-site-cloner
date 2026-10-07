@@ -1,0 +1,16 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "Brings up real WordPress + MariaDB stacks in podman to exercise the plugin's export/import flow end to end: a source site, and two destination sites (one PHP 8.3, one PHP 7.4) with a different table prefix than the source.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}
