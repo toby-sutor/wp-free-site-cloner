@@ -1,0 +1,14 @@
+internal/
+/vendor/
+/tests/e2e/.work/
+/tests/e2e/node_modules/
+/tests/e2e/__pycache__/
+/build/
+.phpunit.result.cache
+*.tar
+*.wpress
+*.zip
+.env
+
+# Local agent worktrees and session data
+.claude/
